@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-language" content="id">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirim Lamaran untuk Posisi Affiliate Marketer - Almufid Official</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .deskripsi-persyaratan {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Kirim Lamaran untuk Posisi Affiliate Marketer - Almufid Official</h1>
+        
+        <p class="deskripsi-persyaratan">
+            <strong>Persyaratan:</strong><br>
+            - File Lamaran dalam format PDF.<br>
+            - Ukuran maksimal 2MB.<br>
+            - Berkas lamaran harus sesuai dengan kriteria yang dibutuhkan perusahaan.
+        </p>
+        
+        <input type="file" id="fileInput" accept="application/pdf">
+        <button onclick="kirimLamaran()">Kirim Lamaran</button>
+    </div>
+
+    <script>
+        function kirimLamaran() {
+            var fileInput = document.getElementById("fileInput");
+            var file = fileInput.files[0];
+            
+            if (file && file.size <= 2 * 1024 * 1024) { 
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var whatsappURL = "https://wa.me/6285266745599?text=" + encodeURIComponent("Silakan perkenalkan diri, dan kirimkan CV Anda! ");
+                    
+                    window.open(whatsappURL);
+                };
+                
+                reader.readAsDataURL(file);
+            } else {
+                alert("Silakan pilih berkas PDF dengan ukuran maksimal 2MB.");
+            }
+        }
+    </script>
+</body>
+
+</html>

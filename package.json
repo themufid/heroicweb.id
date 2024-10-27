@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.10",
+    "exceljs": "^4.4.0",
+    "express": "^4.19.2",
+    "xlsx": "^0.18.5"
+  },
+  "name": "heroic-web",
+  "description": "Welcome to My Digital Home\r ![ui_light](https://github.com/themufid/almufid/assets/111524042/3c32905e-951c-4427-87f1-9a5f86fb2282)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
