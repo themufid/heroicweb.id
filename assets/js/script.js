@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       const emailContent = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
 
-      window.location.href = `mailto:almufid.business@gmail.com?subject=Message from ${name}&body=${encodeURIComponent(emailContent)}`;
+      window.location.href = `mailto:cs.heroicweb@gmail.com?subject=Message from ${name}&body=${encodeURIComponent(emailContent)}`;
   });
 });
 
