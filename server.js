@@ -79,8 +79,8 @@ app.get('/contact', (req, res) => {
     res.sendFile(path.join(__dirname, 'contact.html'));
 });
 
-app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, 'about.html'));
+app.get('/author', (req, res) => {
+    res.sendFile(path.join(__dirname, 'author.html'));
 });
 
 app.get('/about-us', (req, res) => {
